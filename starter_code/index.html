@@ -11,7 +11,7 @@
 <section id="main">
 <section class="formSection container">
 <form class="form" method="GET">
-<h1>My Dev Story</h1>
+         <h1>My Dev Story</h1>
 <div class="row formGroup">
    <label for="name">Name:</label>
    <input id="name" name="name">
@@ -124,18 +124,18 @@ $("form").on("submit", function(event){
    	//need to grab name field and get the value
    	var name = $('#name').val();
 //"Once upon a time there was a Developer named NAME."
-   	var sentance1 = "Once upon a time there was a developer named " + name + ".<br><br>";
+   	var sentance1 = "Once upon a time there was a developer named " + name + ".<br>";
    	$('.results').append(sentance1);
    	//need to take varible and add __ inside results, appeend it and put variable in
    
 //"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
 var verb1= $('#verb-1').val();
-var sentance2 = name + " came to General Assembly to " + verb1 + " the great mountain of programming knowledge" + ".<br><br>";
+var sentance2 = name + " came to General Assembly to " + verb1 + " the great mountain of programming knowledge" + ".<br>";
 $('.results').append(sentance2);
 
 //""MISSION", NAME shouted."
 var mission = $('#mission').val();
-var sentance3 = mission + " " + name + " shouted." + "<br><br>";
+var sentance3 = mission + " " + name + " shouted." + "<br>";
 $('.results').append(sentance3);
 
 //"Through SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
@@ -143,7 +143,7 @@ var noun = $('#noun-1').val();
 var sentiment = $("input[name = sentiment]:checked").val();
 console.log('sentiment: ' + sentiment);
 var sentance4 = "Through " + sentiment + "," + name + "was able to overcome all obstacles with the power of their " + noun +
-".<br><br>";
+".<br>";
 $('.results').append(sentance4);
 //"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
 var adjective2 = $("input[name =adjective-2]:checked").map(function() {return this.value;}).get().join(', ');
